@@ -1,0 +1,421 @@
+body {
+
+  background-color: #F2F3EE;
+  
+}
+/* navbar section */
+/* General Navbar Styles */
+.container{
+  max-width: 1050px;
+  margin: auto;
+  padding: 0 15px;
+  padding-top: 0.9%;
+  padding-left: 0%;
+}
+
+.navbar {
+  background-color: #101010;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 100px;
+  height: 70px;
+
+}
+
+.logo img {
+  width: 230px;
+  height: 140px;
+  padding-left: 1%;
+  padding-top: 5%;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+.nav-links.button1:hover {
+   color: #0056b3;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Poppins", serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.button1 {
+  background-color: #234E9C;
+  border-radius: 70px;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 120px;
+  height: 40px;
+
+}
+.button1:hover {
+  background-color: #0056b3;
+}
+.b2{
+  padding-left: 5pc;
+  }
+
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 16px;
+  height: 14px;
+  cursor: pointer;
+padding-right: 38px;
+}
+
+.hamburger span {
+  background: rgb(255, 255, 255);
+  height: 2.4px;
+  border-radius: 1px;
+  transition: all 0.3s ease;
+  padding-left: 10%;
+}
+
+.hamburger span:nth-child(1) {
+  transform-origin: top left;
+}
+.hamburger span:nth-child(3) {
+  transform-origin: bottom left;
+  padding-left: 50%;
+}
+
+/* Animation for Hamburger */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+/* hero section */
+.hero {
+  text-align: center;
+  color: #07080A;
+  font-family: "Roboto", sans-serif;
+  font-weight: 50px;
+  font-style: normal;
+  font-size: 30px;
+  padding-top: 1.7%;
+}
+.h2 {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #828282;
+  padding-top: 0px;
+  padding-left: 30px;
+  width: 300px;
+  position: absolute;
+  z-index: -1;
+  top: 270px;
+  left: 60px;
+  display: flex;
+  padding-bottom:px;
+}
+.h3 {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #828282;
+  padding-bottom: 50px;
+  padding-left: 800px;
+  width: 290px;
+  padding-top: 0px;
+  display: flex;
+  position: relative; /* Ensures z-index works */
+  z-index: -1; /* Pushes the elements behind others */
+  padding-top: 0%;
+  position: absolute;
+  z-index: -1;
+  top: 270px;
+  left: 12px;
+}
+/* services section */
+.serv {
+  padding-top: 7.5%;
+  color: #F2F3EE;
+  padding-left: 50%;
+  padding-bottom: 2%;
+}
+/* facebook ads */
+
+.face {
+  background-color: #ff9269;
+  width: 313px;
+  height: 85px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* To keep child elements positioned relative */
+  float: left; /* Places .face and .email side by side */
+  margin-right: 40px; /* Adds spacing between .face and .email */
+  margin-left: 20px;
+}
+
+.email {
+  background-color: #9ac4ff;
+  width: 313px;
+  height: 85px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* To keep child elements positioned relative */
+  float: left; /* Aligns beside .face */
+  margin-right: 40px;
+}
+.seo{
+  background-color: #9ac4ff;
+  width: 313px;
+  height: 85px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* To keep child elements positioned relative */
+  float: left; /* Aligns beside .face */
+  margin-right: 40px;
+  left: 20px;
+  top: 20px;
+  
+}
+.app{
+  background-color: #fae861;
+  width: 313px;
+  height: 85px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* To keep child elements positioned relative */
+  float: left; /* Aligns beside .face */
+  margin-right: 40px;
+  left: 20px;
+  top: 20px;
+  
+}
+.host{
+  background-color: #ff9269;
+  width: 313px;
+  height: 85px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* To keep child elements positioned relative */
+  float: left; /* Aligns beside .face */
+  margin-right: 10px;
+  left: 22px;
+  top: 20px;
+  
+}
+
+.w, .e, .g, .s, .a, .h {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #353535;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 28%;
+}
+.a2 {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 13px; /* Adjust positioning within the parent */
+  left: 210px;
+  z-index: 1;
+}
+.h4 {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 13px; /* Adjust positioning within the parent */
+  left: 210px;
+  z-index: 1;
+}
+.f2 {
+  
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  top: 9px; /* Adjust positioning within the parent */
+  left: 210px;
+  z-index: 1;
+}
+.e2{
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: 18px; /* Adjust positioning within the parent */
+  left: 215px;
+  z-index: 1;
+}
+.s2{
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: 18px; /* Adjust positioning within the parent */
+  left: 215px;
+  z-index: 1;
+}
+.googel {
+  background-color: #fae861;
+  width: 313px;
+  height: 85px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* To keep child elements positioned relative */
+  float: left; /* Aligns beside .face */
+  
+}
+.g2{
+  width: 53px;
+  height: 53px;
+  position: absolute;
+  top: 18px; /* Adjust positioning within the parent */
+  left: 220px;
+  z-index: 1;
+}
+/* Base styles remain the same until the media queries */
+
+/* Add these media queries at the end of your CSS file */
+
+/* Base styles remain the same until the media queries */
+
+/* Add these media queries at the end of your CSS file */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 90%;
+    padding: 0 20px;
+  }
+
+  .face, .email, .googel, .seo, .app, .host {
+    width: calc(50% - 30px);
+    margin: 15px;
+  }
+
+  .h2, .h3 {
+    position: static;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .h3, .h2 {
+   display: none;
+  }
+  
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    background-color: #101010;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px 0;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 15px 0;
+  }
+
+  .b2 {
+    padding-left: 0;
+    margin-top: 15px;
+  }
+
+  .logo img {
+    width: 180px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .face, .email, .googel  {
+    width: 100%;
+    margin: 10px 0;
+    float: none;
+  }
+
+  .hero {
+    font-size: 20px;
+    padding-top: 30px;
+  }
+
+  .w, .e, .g, .s, .a, .h {
+    padding-right: 15%;
+  }
+
+  .a2, .h4, .f2, .e2, .s2, .g2 {
+    width: 45px;
+    height: 45px;
+    left: auto;
+    right: 20px;
+    display: block;
+  }
+  .seo, .app, .host {
+    width: 100%;
+    margin: 10px 0;
+    float: none;
+    left: 0% ;
+    top: 10%;
+  }
+}
+
